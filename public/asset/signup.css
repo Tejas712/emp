@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+
+.login{
+    font-family: 'Poppins', sans-serif;
+    width: 660px;
+    text-align: center;
+    cursor: auto;
+}
+
+.login i{
+    color: #ccc;
+    font-size: 65px;
+    margin-bottom: 30px;
+    cursor: auto;
+}
+.login .user-input{
+    width: 320px;
+    height: 55px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition:0.5s box-shadow, border-right, border-left;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.login .user-input:hover,.login .user-input:focus, .login .user-input:active{
+    border-left: solid 8px #4285F4;
+    border-right: solid 8px #4285F4;
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.8);
+}
+
+
+.login .btn{
+    outline: none;
+    border: none;
+    width: 320px;
+    height: 55px;
+    background-color: #4285F4;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s box-shadow, border-right, border-left;
+}
+
+.login .btn:hover{
+    border-left: solid 8px rgba(255, 255, 255, 0.5);
+    border-right: solid 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.8);
+}
+.login .option-2{
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 30px;
+}
+.login .option-2 a{
+    color: #4285F4;
+}
+
+@media screen and (max-width: 500px){
+    .login{
+        width: 95%;
+    }
+
+    .login .user-input{
+        width: 100%;
+    }
+
+    .login .btn{
+        width: 100%;
+    }
+}
